@@ -25,6 +25,25 @@ public class MainAplikasiKasir {
         String transaksi_lagi = "", pesan_lagi = "", keterangan = "", makan_ditempat;
         int jumlah_pesanan, no_menu;
         //End of Tambahkan    
+        
+        app.generateDaftarMenu();
+        
+        //mulai transaksi
+        System.out.println("========== TRANSAKSI ==========");
+        
+        //ambil data transaksi
+         System.out.print("No Transaksi : ");
+            no_transaksi = input.next();
+            System.out.print("Pemesan : ");
+            nama_pemesanan = input.next();
+            System.out.print("Tanggal : [dd-mm-yyyy] ");
+            tanggal = input.next();
+            System.out.print("Makan ditempat? [Y?N] ");
+            makan_ditempat = input.next();
+
+            if (makan_ditempat.equalsIgnoreCase("Y")) {
+                System.out.print("Nomor Meja : ");
+                no_meja = input.next();
     }
     
     public void generateDaftarMenu() {
