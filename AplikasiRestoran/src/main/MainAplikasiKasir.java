@@ -45,6 +45,24 @@ public class MainAplikasiKasir {
                 System.out.print("Nomor Meja : ");
                 no_meja = input.next();
     }
+             //tambah
+    private double biayaService=0;
+
+    public Transaksi(String no_transaksi, String nm_pemesan, String tanggal, String no_meja) {
+        this.noTransaksi = no_transaksi;
+        this.namaPemesanan = nm_pemesan;
+        this.tanggal= tanggal;
+        this.noMeja = no_meja;
+
+        pesanan = new ArrayList<>();
+    }
+    public void tambahPesanan(Pesanan pesanan) {
+        this.pesanan.add(pesanan);
+    }
+
+    public ArrayList<Pesanan> getSemuaPesanan(){
+        return pesanan;
+    }
     
     public void generateDaftarMenu() {
      daftarMenu = new DaftarMenu();
