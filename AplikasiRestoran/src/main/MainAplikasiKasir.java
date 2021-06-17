@@ -11,7 +11,21 @@ package main;
  */
 public class MainAplikasiKasir {
     
-    public static void main(String [] args) { }
+    public DaftarMenu daftarMenu;
+    //Tambahkan
+    public static double PAJAK_PPN = 0.10;
+    public static double BIAYA_SERVICE = 0.05;
+    //End Of Tambahkan
+    
+    public static void main(String [] args) { 
+        //init
+        Scanner input = new Scanner(System.in);
+        //Tambahkan
+        String no_transaksi, nama_pemesanan, tanggal, no_meja = "";
+        String transaksi_lagi = "", pesan_lagi = "", keterangan = "", makan_ditempat;
+        int jumlah_pesanan, no_menu;
+        //End of Tambahkan    
+    }
     
     public void generateDaftarMenu() {
      daftarMenu = new DaftarMenu();
