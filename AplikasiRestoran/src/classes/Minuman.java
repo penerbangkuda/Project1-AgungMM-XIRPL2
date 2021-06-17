@@ -9,6 +9,8 @@ package classes;
  *
  * @author laptop
  */
-public class Minuman {
+public class Minuman extends Menu {
+    
+    public Minuman(String nama_toping, double harga) { }
     
 }
